@@ -1,0 +1,14 @@
+oskus tiedostoihin tulee tehtyä muutoksia, jotka on tarpeen perua
+
+Tee nyt joku muutos tiedostoon eka.txt, älä lisää tiedostoa committoitavaksi
+Suorita komento git status
+mluukkai@melkinpaasi:~/ot_viikko1$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   eka.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Kuten oletettua, git kertoo että olemme tehneet muutoksia, jotka eivät ole “staged for commit”, eli lisättyjä commitoitavaksi.
+kolmas muutos
