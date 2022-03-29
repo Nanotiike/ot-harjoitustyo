@@ -36,4 +36,4 @@ Viimeinen näkymä on varsinainen budjetointi sivu. Tässä näkymässä on taul
 - Käyttäjä voisi tehdä myös suunnitelmia tulevien kuukauksien varalta
 - Käyttäjä voisi myös nähdä suunnitelman vuosi kerrallaan, eikä vain kuukausi.
   - Tässä olisi kaikki samat funktionaalisuudet kuin kuukausissa, mutta vain suuremmassa mittakaavassa.
-- 
+
