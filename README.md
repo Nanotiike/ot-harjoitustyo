@@ -2,9 +2,9 @@
 ## **VIIKKO 1**
 Ohjelmistotekniikka kurssin **viikko1** laskari tehtävät. *tehty githubiin*.
 
-[gitlog](ot-harjoitustyo/laskarit/viikko1/gitlog.txt)
+[gitlog](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
 
-[komentorivi](ot-harjoitustyo/laskarit/viikko1/komentorivi.txt)
+[komentorivi](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
 
-[vaatimusmaarittely](ot-harjoitustyo/laskarit/viikko1/dokumentaatio/vaatimusmaarittely.md)
+[vaatimusmaarittely](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/laskarit/viikko1/dokumentaatio/vaarimusmaarittely.md)
 
