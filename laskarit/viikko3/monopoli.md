@@ -1,6 +1,6 @@
 ```mermaid
  classDiagram
-      Todo "*" --> "1" User
+      Pelaaja --> Pelaajia
       class Pelaajia{
           maara
 	  min=2
