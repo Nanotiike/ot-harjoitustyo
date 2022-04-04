@@ -1,7 +1,7 @@
 ```mermaid
  classDiagram
       Pelaaja --> Pelaajia
-      Ruutu --> Pelilauta
+      Ruutu -- Pelilauta
       Pelaaja "nappula" --> Pelilauta
       class Pelaajia{
           maara
