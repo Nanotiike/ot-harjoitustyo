@@ -6,6 +6,8 @@ Ohjelmistotekniikka kurssin **viikko1** laskari tehtävät. *tehty githubiin*.
 
 [komentorivi](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
 
-[vaatimusmaarittely](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/laskarit/viikko1/dokumentaatio/vaarimusmaarittely.md)
+[vaatimusmaarittely](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/Budjetointi-app/dokumentaatio/vaarimusmaarittely.md)
 
-[tuntikirjanpito](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/laskarit/viikko1/dokumentaatio/tuntikirjanpito.md)
+[tuntikirjanpito](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/Budjetointi-app/dokumentaatio/tuntikirjanpito.md)
+
+[changelog](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/Budjetointi-app/dokumentaatio/changelog.md)
