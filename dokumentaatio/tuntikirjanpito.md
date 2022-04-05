@@ -1,4 +1,4 @@
 # Työaikakirjanpito
 
-| päivä | aika | mitä tein  |
-| :----:|:-----| :-----|
+| päivä | aika | mitä tein | yhteensä |
+|:----:|:-----|:-----|:------| 
