@@ -1,3 +1,5 @@
 .pytest_cache
 __pycache__
 __MACOSX
+.coverage
+htmlcov
