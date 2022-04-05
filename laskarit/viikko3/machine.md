@@ -15,4 +15,6 @@ sequenceDiagram
    E ->> F: tank.fuel_contents
    F -->> E: 35
    E -->> M: true
+   M ->> E: engine.use_energy
+   E ->> F: tank.consume(10)
 ```
