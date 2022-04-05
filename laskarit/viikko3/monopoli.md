@@ -7,11 +7,11 @@
       Vankila "sijainti" --> Pelilauta
       Aloitusruutu --> Ruutu
       Vankila --> Ruutu
-      Sattuma/Yhteismaa --> Ruutu
-      Asema/Laitos --> Ruutu
+      Sattuma_tai_Yhteismaa --> Ruutu
+      Asema_tai_Laitos --> Ruutu
       Katu --> Ruutu
       Katu "omistaja" --> Pelaaja
-      Kortti --> Sattuma/Yhteismaa
+      Kortti --> Sattuma_tai_Yhteismaa
       class Pelaajia{
           maara
 	  min=2
@@ -34,10 +34,10 @@
       class Vankila{
           toiminto
       }
-      class Sattuma/Yhteismaa{
+      class Sattuma_tai_Yhteismaa{
           toiminto
       }
-      class Asema/Laitos{
+      class Asema_tai_Laitos{
           toiminto
       }
       class Katu{
