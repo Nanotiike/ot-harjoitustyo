@@ -8,5 +8,8 @@ sequenceDiagram
    M ->> F: Fueltank()
    M ->> F: fill(40)
    M ->> E: Engine(Fueltank)
+   X ->> M: drive()
+   M ->> E: engine.start
+   E ->> F: tank.consume(5)
    
 ```
