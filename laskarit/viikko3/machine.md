@@ -17,5 +17,5 @@ sequenceDiagram
    E -->> M: true
    M ->> E: engine.use_energy
    E ->> F: tank.consume(10)
-   E ->>- F:
+   E ->>- F: m
 ```
