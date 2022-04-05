@@ -12,9 +12,11 @@ sequenceDiagram
     M ->> H: lisää_lataaja(rautatietori)
     M ->> H: lisää_lukija(ratikka6)
     M ->> H: lisää_lukija(bussi244)
-    participant K as Kioski
-    M ->> K: Kioski()
-    participant Ka as Kalle
+    participant L as lippu_luukku
+    M ->> L: Kioski()
+    participant K as Kalle
+    M ->> L: osta_matkakortti(Kalle)
+    L ->> K: Matkakortti(Kalle)
     
     
 ```
