@@ -1,0 +1,2 @@
+- Lisätty user luokka ja sen perus toiminnot
+- lisätty budjetti luokka ja sen perus toiminnot
