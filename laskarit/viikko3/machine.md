@@ -11,5 +11,8 @@ sequenceDiagram
    X ->> M: drive()
    M ->> E: engine.start
    E ->> F: tank.consume(5)
-   
+   M ->> E: engine.is_running
+   E ->> F: tank.fuel_contents
+   F -->> E: 35
+   E -->> M: true
 ```
