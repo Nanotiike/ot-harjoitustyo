@@ -1,0 +1,113 @@
+commit 40d0900c885d97cd42199f60416cfb5afc9b75c9
+Author: Harri <harri.gavert@helsinki.fi>
+Date:   Thu Nov 2 15:31:16 2023 +0200
+
+    poistin file1 ja uudelleen nimesin file2
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 1fe3488487d0f66d0e0e572385d9a604fc0a2092
+Author: Harri <harri.gavert@helsinki.fi>
+Date:   Thu Nov 2 15:29:40 2023 +0200
+
+    tiedostoja
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 7127b1135ebc91c094e93a21e8357a889312e96f
+Author: Harri <harri.gavert@helsinki.fi>
+Date:   Thu Nov 2 15:25:10 2023 +0200
+
+    muutoksia ekaan ja kolmanteen
+
+ eka.txt    | 6 +-----
+ kolmas.txt | 3 ++-
+ 2 files changed, 3 insertions(+), 6 deletions(-)
+
+commit 7299ade73c29476fa9c87fb1c9e923db46dd8937
+Author: Harri <harri.gavert@helsinki.fi>
+Date:   Thu Nov 2 15:23:54 2023 +0200
+
+    rename
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit e83457f849e27c0f5695a31178f55f5f768f08da
+Author: Harri <harri.gavert@helsinki.fi>
+Date:   Thu Nov 2 15:22:42 2023 +0200
+
+    poistin toisen
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 3b14d184e851daa708a33a00b004abcb96bf9fce
+Author: Harri <harri.gavert@helsinki.fi>
+Date:   Thu Nov 2 15:20:56 2023 +0200
+
+    poisto ja lisää tekstiä
+
+ tiedosto.txt | 28 ++++++++--------------------
+ 1 file changed, 8 insertions(+), 20 deletions(-)
+
+commit f4c3ac3a12e43ef209b556251fd2283325a00d3a
+Author: Harri <harri.gavert@helsinki.fi>
+Date:   Thu Nov 2 15:19:44 2023 +0200
+
+    paljon tekstiä
+
+ tiedosto.txt | 117 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 117 insertions(+)
+
+commit d8021f00d85040ac1ad9ba9e08d39709da237a18
+Author: Harri <harri.gavert@helsinki.fi>
+Date:   Thu Nov 2 15:15:10 2023 +0200
+
+    stuff
+
+ stuff/jokin_tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 9ed495cf85d84c64dbc0115fedc1d60686332933
+Author: Harri <harri.gavert@helsinki.fi>
+Date:   Thu Nov 2 15:14:13 2023 +0200
+
+    muutos toiseen ja kolmanteen
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit f6618fc970857c89c36ac6f28050b0599f9c275d
+Author: Harri <harri.gavert@helsinki.fi>
+Date:   Thu Nov 2 15:13:36 2023 +0200
+
+    kolmas.txt
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 9d2e6f4db699ef37d15f7d9952af10c51ccb3546
+Author: Harri <harri.gavert@helsinki.fi>
+Date:   Thu Nov 2 15:12:46 2023 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 891707ca4171f4927ee17208331e12122c7103ce
+Author: Harri <harri.gavert@helsinki.fi>
+Date:   Thu Nov 2 15:10:24 2023 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
