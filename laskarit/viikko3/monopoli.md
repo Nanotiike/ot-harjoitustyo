@@ -10,13 +10,13 @@
     Pelinappula "1" -- "1" Pelaaja
     Pelaaja "2..8" -- "1" Monopolipeli
     Aloitusruutu "1" -- "40" Ruutu
-    Aloitusruutu "Sijainti" --> Monopolipeli
+    Aloitusruutu "Sijainti" --> "1" Monopolipeli
     Vankila "1" -- "40" Ruutu
-    Vankila "Sijainti" --> Monopolipeli
-    Sattuma ja yhteismaa -- "40" Ruutu
-    Asemat ja laitokset -- "40" Ruutu
-    Kadut -- "40" Ruutu
-    Toiminnot -- "1" Ruutu
-    Kortit -- Sattuma ja yhteismaa
-    Toiminnot -- "1" Kortit
+    Vankila "Sijainti" --> "1" Monopolipeli
+    Sattuma ja yhteismaa "4" -- "40" Ruutu
+    Asemat ja laitokset "2" -- "40" Ruutu
+    Kadut "20" -- "40" Ruutu
+    Toiminnot "1" -- "1" Ruutu
+    Kortit "40" -- "4" Sattuma ja yhteismaa
+    Toiminnot "1" -- "1" Kortit
 ```
