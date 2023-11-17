@@ -5,9 +5,9 @@
     participant main
     participant HKLLaitehallinto
     create participant rautatietori
-    main->>rautatietori: Lataajalaite("")
+    main->>rautatietori: Lataajalaite
     create participant ratikka6
-    main->>ratikka6: Lukijalaite("")
+    main->>ratikka6: Lukijalaite
     create participant bussi244
-    main->>bussi244: Lukijalaite("") 
+    main->>bussi244: Lukijalaite 
 ```
