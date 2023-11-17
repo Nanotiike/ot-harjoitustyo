@@ -2,10 +2,10 @@
 
 ```mermaid
   sequenceDiagram
-    actor main
-    actor Kioski
-    actor Matkakortti
-    actor Lataajalaite
-    actor Lukijalaite
-    actor HKLLaitehallinto
+    participant main
+    participant Kioski
+    participant Matkakortti
+    participant Lataajalaite
+    participant Lukijalaite
+    participant HKLLaitehallinto
 ```
