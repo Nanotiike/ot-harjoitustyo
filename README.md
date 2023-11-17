@@ -1,15 +1,10 @@
-# Ohjelmistotekniikka Harjoitustyö
+# Sudoku -peli
 
-Tämä on _harjoitustyö_ **Ohjelmistotekniikka** kurssia varten.
+Pelissä pelaajat voivat ratkaista sudoku ruudukon.
 
-### Viikko 1
+## Dokumentaatio
 
-[gitlog.txt](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
+- [Vaatimusmäärittely](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+- [Tuntikirjanpito](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+- [Changelog]()
 
-[komentorivi.txt](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
-
-### Viikko 2
-
-[vaatimusmaarittely.md](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
-
-[tuntikirjanpito.md](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
