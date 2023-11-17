@@ -15,7 +15,8 @@
     Vankila "Sijainti" --> "1" Monopolipeli
     Sattuma ja yhteismaa "6" -- "40" Ruutu
     Asemat ja laitokset "6" -- "40" Ruutu
-    Kadut:nimi "22" -- "40" Ruutu
+    Kadut "22" -- "40" Ruutu
+    Kadut "1" -- "1" Kadut : nimi
     Toiminnot "1" -- "1" Ruutu
     Kortit "32" -- "6" Sattuma ja yhteismaa
     Toiminnot "1" -- "1" Kortit
