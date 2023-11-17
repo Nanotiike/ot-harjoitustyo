@@ -11,4 +11,13 @@
     Pelaaja "2..8" -- "1" Monopolipeli
     Aloitusruutu "1" -- "40" Ruutu
     Aloitusruutu "Sijainti" --> Monopolipeli
+    Vankila "1" -- "40" Ruutu
+    Vankila "Sijainti" --> Monopolipeli
+    Sattuma ja yhteismaa -- "40" Ruutu
+    Asemat ja laitokset -- "40" Ruutu
+    Kadut (nimi) -- "40" Ruutu
+    Toiminnot -- "1" Ruutu
+    Kortit -- Sattuma ja yhteismaa
+    Toiminnot -- "1" Kortit
+    
 ```
