@@ -2,9 +2,8 @@
 
 ```mermaid
   sequenceDiagram
-    participant main
-    participant HKLLaitehallinto
-    create participant rautatietori
-    create participant ratikka6
-    create participant bussi244
+    Alice->>John: Hello John, how are you?
+    activate John
+    John-->>Alice: Great!
+    deactivate John
 ```
