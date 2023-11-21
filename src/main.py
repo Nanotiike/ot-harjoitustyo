@@ -1,7 +1,7 @@
-from sudoku import sudoku
+from sudoku import Sudoku
 
 def main():
-    empty_board=sudoku([[0,0,0,0,0,0,0,0,0],
+    empty_board=Sudoku([[0,0,0,0,0,0,0,0,0],
                         [0,0,0,0,0,0,0,0,0],
                         [0,0,0,0,0,0,0,0,0],
                         [0,0,0,0,0,0,0,0,0],

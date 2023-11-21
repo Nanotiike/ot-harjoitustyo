@@ -71,5 +71,3 @@ def generate_sudoku():
     board=temp_board
 
     return board
-
-generate_sudoku()

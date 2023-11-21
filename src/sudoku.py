@@ -1,4 +1,4 @@
-class sudoku:
+class Sudoku:
     def __init__(self, board):
         self.board = board
 
@@ -18,20 +18,20 @@ class sudoku:
                 print("---------------------")
                 c=0
 
-    def check_number(self,x,y,number):
+    def check_number(self,y,x,number):
         for i in range(len(self.board)):
-            if self.board[x][i]==number:
-                return False
+            if self.board[y][i]==number:
+                return True
             
         for i in range(len(self.board)):
-            if self.board[i][y]==number:
-                return False
+            if self.board[i][x]==number:
+                return True
         
         x0=(x//3)*3
         y0=(y//3)*3
         for i in range(3):
             for j in range(3):
-                if self.board[x0+i][y0+j]==number:
-                    return False
+                if self.board[y0+i][x0+j]==number:
+                    return True
 
-        return True
+        return False
