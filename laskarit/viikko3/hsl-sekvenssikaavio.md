@@ -2,5 +2,10 @@
 
 ```mermaid
   sequenceDiagram
-    participant Main
+    participant main
+    participant laitehallinto
+    participant rautatietori
+    participant ratikka6
+    participant bussi244
+    main (HKLLaitehallinto())->> laitehallinto
 ```
