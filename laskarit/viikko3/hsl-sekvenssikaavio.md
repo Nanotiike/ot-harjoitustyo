@@ -2,5 +2,5 @@
 
 ```mermaid
   sequenceDiagram
-    
+    participant Main
 ```
