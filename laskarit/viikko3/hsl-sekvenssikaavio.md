@@ -7,5 +7,5 @@
     participant rautatietori
     participant ratikka6
     participant bussi244
-    main (HKLLaitehallinto())->> laitehallinto
+    main ->> laitehallinto: HKLLaitehallinto
 ```
