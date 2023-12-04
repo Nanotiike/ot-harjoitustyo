@@ -12,4 +12,6 @@ Pelissä pelaajat voivat ratkaista sudoku ruudukon.
 
 #### Ohjelman suorittaminen
 Ohjelman pystyy suorittamaan komennolla:
-# #copyable text    code
+'''
+copy text
+'''
