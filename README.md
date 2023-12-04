@@ -6,5 +6,5 @@ Pelissä pelaajat voivat ratkaista sudoku ruudukon.
 
 - [Vaatimusmäärittely](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 - [Tuntikirjanpito](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
-- [Changelog]()
+- [Changelog](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
 
