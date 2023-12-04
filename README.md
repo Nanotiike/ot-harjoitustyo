@@ -13,6 +13,21 @@ Pelissä pelaajat voivat ratkaista sudoku ruudukon.
 #### Ohjelman suorittaminen
 Ohjelman pystyy suorittamaan komennolla:
 ```
-git status
+poetry run invoke start
 ```
-
+#### Testaus
+Testit suoritetaan komennolla:
+```
+poetry run invoke test
+```
+#### Testikattavuus
+Testikattavuuden voi generoida:
+```
+poetry run invoke coverage_report
+```
+Raportti generoituu htmlcov-hakemistoon.
+#### Pylint
+Tiedoston .pylintrc määrittelemät tarkistukset voi suorittaa komennolla:
+```
+poetry run invoke lint
+```
