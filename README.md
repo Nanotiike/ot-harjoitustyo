@@ -12,7 +12,7 @@ Pelissä pelaajat voivat ratkaista sudoku ruudukon.
 
 #### Ohjelman suorittaminen
 Ohjelman pystyy suorittamaan komennolla:
+```
+git status
+```
 
-'''
-copy text
-'''
