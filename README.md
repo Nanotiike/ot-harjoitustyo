@@ -8,3 +8,8 @@ Pelissä pelaajat voivat ratkaista sudoku ruudukon.
 - [Tuntikirjanpito](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 - [Changelog](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
 
+## Komentorivi
+
+#### Ohjelman suorittaminen
+Ohjelman pystyy suorittamaan komennolla:
+# copyable text    code
