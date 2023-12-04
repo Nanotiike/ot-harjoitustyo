@@ -1,11 +1,16 @@
 from sudoku import Sudoku
 from sudoku_generator import generate_sudoku
+import pygame
 import re
 
 def main():
-    game_board = Sudoku(generate_sudoku())
+    random_board = generate_sudoku()
+    game_board = Sudoku(random_board.board)
     # game_board.print_board(game_board.board)
     # game_board.print_board(game_board.player_board)
+
+    pygame.init()
+    screen = pygame.display.set_mode((540, 600))
 
     running = True
 
