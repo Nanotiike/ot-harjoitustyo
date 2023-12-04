@@ -4,17 +4,32 @@ import pygame
 import re
 
 def main():
+    # Generate sudoku board and initialize the game
     random_board = generate_sudoku()
     game_board = Sudoku(random_board.board)
-    # game_board.print_board(game_board.board)
-    # game_board.print_board(game_board.player_board)
 
+    # Initialize pygame
     pygame.init()
-    screen = pygame.display.set_mode((540, 600))
+    screen_size = (544, 600)
+    screen = pygame.display.set_mode((screen_size))
+    pygame.display.set_caption("Sudoku")
+    font = pygame.font.SysFont("Arial", 30)
 
     running = True
 
     while running:
+        for event in pygame.event.get():
+            draw_backround(screen)
+            draw_numbers(screen, font, game_board)
+            pygame.display.update()
+            if event.type == pygame.QUIT:
+                running = False
+                break
+            elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+                position = pygame.mouse.get_pos()
+
+
+    """while running:
         if game_board.player_board == game_board.board:
             print("You won!")
             running = False
@@ -28,7 +43,25 @@ def main():
             x, y, number = player_move.split()
             print(game_board.make_move(int(y)-1, int(x)-1, int(number)))
         else:
-            print("Invalid input")
+            print("Invalid input")"""
+
+def draw_backround(screen):
+    screen.fill((212, 235, 242))
+    pygame.draw.rect(screen, (255, 255, 255), (20, 20, 504, 504))
+    pygame.draw.rect(screen, (0, 0, 0), (20, 20, 504, 504), 3)
+    i = 1
+    while (i*56)<504:
+        line_width = 3 if i%3 > 0 else 7
+        pygame.draw.line(screen, (0, 0, 0), (20+i*56, 20), (20+i*56, 524), line_width)
+        pygame.draw.line(screen, (0, 0, 0), (20, 20+i*56), (524, 20+i*56), line_width)
+        i+=1
+
+def draw_numbers(screen, font, game_board):
+    for i in range(9):
+        for j in range(9):
+            if game_board.player_board[i][j] != 0:
+                text = font.render(str(game_board.player_board[i][j]), True, (0, 0, 0))
+                screen.blit(text, (20+j*56+20, 20+i*56+12))
 
 if __name__ == '__main__':
     main()
