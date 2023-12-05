@@ -64,8 +64,8 @@ class Sudoku:
         if self.player_board[y][x] == 0:
             if self.board[y][x] == number:
                 self.player_board[y][x] = number
-                return "Correct number"
+                return 0
             else:
-                return "Incorrect number"
+                return 1
         else:
-            return "This cell is already filled in"
+            return 2

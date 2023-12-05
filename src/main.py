@@ -14,6 +14,8 @@ def main():
     screen = pygame.display.set_mode((screen_size))
     pygame.display.set_caption("Sudoku")
     font = pygame.font.SysFont("Arial", 30)
+    x = 0
+    y = 0
 
     running = True
 
@@ -25,9 +27,15 @@ def main():
             if event.type == pygame.QUIT:
                 running = False
                 break
-            elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+            if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
                 position = pygame.mouse.get_pos()
-
+                x = (position[0]-20)//56
+                y = (position[1]-20)//56
+                print(x, y, position)
+            if event.type == pygame.KEYDOWN:
+                print(event.key, x, y)
+                if 0 < event.key-48 < 10:
+                    print(game_board.make_move(y, x, event.key-48))
 
     """while running:
         if game_board.player_board == game_board.board:
@@ -46,6 +54,7 @@ def main():
             print("Invalid input")"""
 
 def draw_backround(screen):
+    # Draw the backround blue and draw a white board with a grid of black lines
     screen.fill((212, 235, 242))
     pygame.draw.rect(screen, (255, 255, 255), (20, 20, 504, 504))
     pygame.draw.rect(screen, (0, 0, 0), (20, 20, 504, 504), 3)
@@ -57,6 +66,7 @@ def draw_backround(screen):
         i+=1
 
 def draw_numbers(screen, font, game_board):
+    # Draw the numbers from the board
     for i in range(9):
         for j in range(9):
             if game_board.player_board[i][j] != 0:
