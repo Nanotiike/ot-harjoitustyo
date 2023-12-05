@@ -6,11 +6,7 @@ import re
 def main():
     # Generate sudoku board and initialize the game
     random_board = generate_sudoku()
-    random_board.shuffle_numbers()
-    random_board.shuffle_rows()
-    random_board.shuffle_columns()
-    random_board.shuffle_3x_rows()
-    random_board.shuffle_3x_columns()
+    random_board.randomize_sudoku()
     game_board = Sudoku(random_board.board)
 
     # Initialize pygame

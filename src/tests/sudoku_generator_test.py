@@ -1,10 +1,10 @@
 import unittest
-from sudoku_generator import generate_sudoku
+from sudoku_generator import Generate_sudoku
 from sudoku import Sudoku
 
 class TestSudokuGenerator(unittest.TestCase):
     def setUp(self):
-        self.sudoku = generate_sudoku()
+        self.sudoku = Generate_sudoku()
 
     def test_generate_sudoku_correct_size(self):
         self.assertEqual(len(self.sudoku.board), 9)
