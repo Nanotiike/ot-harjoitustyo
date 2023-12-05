@@ -6,6 +6,8 @@ Käyttöliittymä on tehty pygamella ja siinä on yksi näkymä. Näkymä toimii
 
 ## Päätoiminnallisuus
 
+Kuvataan seuraavaksi sekvenssikaaviolla päätoiminnallisuudet.
+
 Numeron lisääminen:
 ```mermaid
 sequenceDiagram
