@@ -14,11 +14,6 @@ class generate_sudoku:
                      [3, 1, 2, 6, 4, 5, 9, 7, 8],
                      [6, 4, 5, 9, 7, 8, 3, 1, 2],
                      [9, 7, 8, 3, 1, 2, 6, 4, 5]]
-        self.shuffle_numbers()
-        self.shuffle_rows()
-        self.shuffle_columns()
-        self.shuffle_3x_rows()
-        self.shuffle_3x_columns()
     
     def shuffle_numbers(self):
         # shuffle the numbers. So for example 1 becomes 5, 2 becomes 9, etc.

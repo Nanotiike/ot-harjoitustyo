@@ -35,15 +35,15 @@ class TestSudoku(unittest.TestCase):
         for i in range(9):
             for j in range(9):
                 if self.sudoku.player_board[i][j] == 0:
-                    self.assertEqual(self.sudoku.make_move(i, j, self.sudoku.board[i][j]), "Correct number")
+                    self.assertEqual(self.sudoku.make_move(i, j, self.sudoku.board[i][j]), 0)
                     break
                 else:
-                    self.assertEqual(self.sudoku.make_move(i, j, 3), "This cell is already filled in")
+                    self.assertEqual(self.sudoku.make_move(i, j, 3), 2)
             for j in range(9):
                 if self.sudoku.player_board[i][j] == 0:    
-                    self.assertEqual(self.sudoku.make_move(i, j, self.sudoku.board[i][j]+1), "Incorrect number")
+                    self.assertEqual(self.sudoku.make_move(i, j, self.sudoku.board[i][j]+1), 1)
                     break
                 else:
-                    self.assertEqual(self.sudoku.make_move(i, j, 3), "This cell is already filled in")
+                    self.assertEqual(self.sudoku.make_move(i, j, 3), 2)
             break
         

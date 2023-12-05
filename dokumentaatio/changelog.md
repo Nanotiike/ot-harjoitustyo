@@ -15,4 +15,6 @@
 ## Viikko 5
 
 - Muutettiin UI pygameen ja tehtiin siitä toimiva
+- UI ohjeistaa kuinka pelata
 - generate sudoku on nyt luokka
+- lisää testejä
