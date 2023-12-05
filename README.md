@@ -9,6 +9,17 @@ Pelissä pelaajat voivat ratkaista sudoku ruudukon.
 - [Changelog](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
 - [Arkkitehtuuri](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
+## Asennus
+
+1. Asenna riippuvuudet komennolla:
+```
+poetry install
+```
+2. Käynnistä sovellus komennolla:
+```
+poetry run invoke start
+```
+
 ## Komentorivi
 
 #### Ohjelman suorittaminen
