@@ -12,11 +12,11 @@ sequenceDiagram
   actor User
   participant main
   participant Sudoku
-  user ->> main: muose click(x,y)
+  User ->> main: muose click(x,y)
   main -> main: draw_backround()
-  user ->> main: press 1-9
-  main ->> sudoku: make_move(x,y,number)
-  sudoku --> main: 0
-  sudoku -> sudoku: player_board.append(x,y,number)
+  User ->> main: press 1-9
+  main ->> Sudoku: make_move(x,y,number)
+  Sudoku --> main: 0
+  Sudoku -> Sudoku: player_board.append(x,y,number)
   main -> main: draw_backround()
 ```
