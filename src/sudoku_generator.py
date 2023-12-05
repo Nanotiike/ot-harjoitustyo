@@ -1,6 +1,6 @@
 from random import shuffle, sample
 
-class generate_sudoku:
+class Generate_sudoku:
     def __init__(self):
         # Generate a random sudoku board
         # Return a 9x9 list
@@ -76,7 +76,7 @@ class generate_sudoku:
 
         self.board = temp_board
     
-    def generate_sudoku(self):
+    def randomize_sudoku(self):
         # shuffle the numbers, rows, columns, 3x rows and 3x columns
         # return a 9x9 list
         self.shuffle_numbers()
