@@ -1,11 +1,11 @@
 from sudoku import Sudoku
-from sudoku_generator import generate_sudoku
+from sudoku_generator import Generate_sudoku
 import pygame
 import re
 
 def main():
     # Generate sudoku board and initialize the game
-    random_board = generate_sudoku()
+    random_board = Generate_sudoku()
     random_board.randomize_sudoku()
     game_board = Sudoku(random_board.board)
 
