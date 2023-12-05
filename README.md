@@ -1,6 +1,6 @@
 # Sudoku -peli
 
-Pelissä pelaajat voivat ratkaista sudoku ruudukon.
+Pelissä pelaajat voivat ratkaista sudoku ruudukon. Sudoku ruudukko generoidaan pelaajalle valmiiksi ja he voivat yrittää ratkaista sitä kunnes onnistuvat tai sulkevat ohjelman.
 
 ## Dokumentaatio
 
