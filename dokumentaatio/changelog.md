@@ -18,3 +18,9 @@
 - UI ohjeistaa kuinka pelata
 - generate sudoku on nyt luokka
 - lisää testejä
+
+## Viikko 6
+
+- Voittaminen toimii
+- lisätty kello joka ajastaa kuinka pitkään sudokun ratkaisemiseen menee
+- lisätty kirjaus virheistä

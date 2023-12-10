@@ -4,6 +4,7 @@ class Sudoku:
     def __init__(self, board):
         self.board = board
         self.player_board = self.create_player_board()
+        self.mistakes = 0
 
     def print_board(self, board):
         c = 0
@@ -66,6 +67,7 @@ class Sudoku:
                 self.player_board[y][x] = number
                 return 0
             else:
+                self.mistakes += 1
                 return 1
         else:
             return 2
