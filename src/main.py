@@ -27,13 +27,12 @@ def main():
     running = True
 
     while running:
-        totaltime = round((time.time() - starttime), 2)
-        text3 = font.render("Time: "+str(totaltime)+"s", True, (0, 0, 0))
-        screen.blit(text3, (380, 10))
-        pygame.display.flip()
         for event in pygame.event.get():
             draw_backround(screen, x, y)
             draw_numbers(screen, font, game_board)
+            totaltime = round((time.time() - starttime), 2)
+            text3 = font.render("Time: "+str(totaltime)+"s", True, (0, 0, 0))
+            screen.blit(text3, (380, 10))
             pygame.display.update()
             if game_board.player_board == game_board.board:
                 endtime = time.time()
@@ -66,22 +65,23 @@ def main():
                         pygame.time.delay(2000)
     
     # Display the end screen
-    endscreen = True
-    while endscreen == True:
-        pygame.draw.rect(screen, (255, 255, 255), (97, 212, 350, 200))
-        pygame.draw.rect(screen, (0, 0, 0), (97, 212, 350, 200), 3)
-        font3 = pygame.font.SysFont("Arial", 70)
-        text = font3.render("You Win!", True, (0, 0, 0))
-        screen.blit(text, (132, 224))
-        text2 = font2.render("Time: "+str(round(endtime-starttime, 2))+"s", True, (0, 0, 0))
-        screen.blit(text2, (227, 324))
-        text3 = font2.render("Mistakes: "+str(game_board.mistakes), True, (0, 0, 0))
-        screen.blit(text3, (227, 349))
-        pygame.display.flip()
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                endscreen = False
-                break
+    if game_board.player_board == game_board.board:
+        endscreen = True
+        while endscreen == True:
+            pygame.draw.rect(screen, (255, 255, 255), (97, 212, 350, 200))
+            pygame.draw.rect(screen, (0, 0, 0), (97, 212, 350, 200), 3)
+            font3 = pygame.font.SysFont("Arial", 70)
+            text = font3.render("You Win!", True, (0, 0, 0))
+            screen.blit(text, (132, 224))
+            text2 = font2.render("Time: "+str(round(endtime-starttime, 2))+"s", True, (0, 0, 0))
+            screen.blit(text2, (227, 324))
+            text3 = font2.render("Mistakes: "+str(game_board.mistakes), True, (0, 0, 0))
+            screen.blit(text3, (227, 349))
+            pygame.display.flip()
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    endscreen = False
+                    break
 
 def draw_backround(screen, x, y):
     # Draw the backround blue and draw a white board with a grid of black lines
