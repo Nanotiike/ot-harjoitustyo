@@ -1,14 +1,17 @@
 from sudoku import Sudoku
 from sudoku_generator import Generate_sudoku
+from game_loop import Game_loop
 import pygame
 import re
 import time
 
 def main():
-    # Generate sudoku board and initialize the game
+    # Generate sudoku board
     random_board = Generate_sudoku()
     random_board.randomize_sudoku()
     game_board = Sudoku(random_board.board)
+
+    """game_loop = Game_loop(game_board, renderer)"""
 
     # Initialize pygame
     pygame.init()
@@ -18,7 +21,7 @@ def main():
     font = pygame.font.SysFont("Arial", 30)
     font2 = pygame.font.SysFont("Arial", 20)
 
-    #misc variables
+    # Misc variables
     starttime = time.time()
     endtime = starttime
     x = -1
@@ -27,13 +30,13 @@ def main():
     running = True
 
     while running:
+        draw_backround(screen, x, y)
+        draw_numbers(screen, font, game_board)
+        totaltime = round((time.time() - starttime))
+        text3 = font.render("Time: "+str(totaltime)+"s", True, (0, 0, 0))
+        screen.blit(text3, (380, 10))
+        pygame.display.update()
         for event in pygame.event.get():
-            draw_backround(screen, x, y)
-            draw_numbers(screen, font, game_board)
-            totaltime = round((time.time() - starttime), 2)
-            text3 = font.render("Time: "+str(totaltime)+"s", True, (0, 0, 0))
-            screen.blit(text3, (380, 10))
-            pygame.display.update()
             if game_board.player_board == game_board.board:
                 endtime = time.time()
                 running = False
@@ -45,9 +48,7 @@ def main():
                 position = pygame.mouse.get_pos()
                 x = (position[0]-20)//56
                 y = (position[1]-60)//56
-                print(x, y, position)
             if event.type == pygame.KEYDOWN:
-                print(event.key, x, y)
                 if 0 < event.key-48 < 10 and -1<x<9 and -1<y<9:
                     result = game_board.make_move(y, x, event.key-48)
                     if result != 0:
@@ -62,7 +63,8 @@ def main():
                             text = font2.render("That square already has a number!", True, (0, 0, 0))
                             screen.blit(text, (117, 299))
                         pygame.display.update()
-                        pygame.time.delay(2000)
+                        pygame.time.delay(800)
+                        pygame.event.wait()
     
     # Display the end screen
     if game_board.player_board == game_board.board:

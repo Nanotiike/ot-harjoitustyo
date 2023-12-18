@@ -33,10 +33,7 @@ class Generate_sudoku:
     def shuffle_rows(self):
         # shuffle the rows
         temp_board = []
-        rows1 = sample([0, 1, 2], 3)
-        rows2 = sample([3, 4, 5], 3)
-        rows3 = sample([6, 7, 8], 3)
-        rows = rows1+rows2+rows3
+        rows = self.row_column_shuffler()
         for i in rows:
             temp_board.append(self.board[i])
 
@@ -45,15 +42,20 @@ class Generate_sudoku:
     def shuffle_columns(self):
         # shuffle the columns
         temp_board = [[], [], [], [], [], [], [], [], []]
-        columns1 = sample([0, 1, 2], 3)
-        columns2 = sample([3, 4, 5], 3)
-        columns3 = sample([6, 7, 8], 3)
-        columns = columns1+columns2+columns3
+        columns = self.row_column_shuffler()
         for i in columns:
             for j in range(9):
                 temp_board[j].append(self.board[j][i])
 
         self.board = temp_board
+
+    def row_column_shuffler(self):
+        # Shuffle the rows or columns
+        x1 = sample([0, 1, 2], 3)
+        x2 = sample([3, 4, 5], 3)
+        x3 = sample([6, 7, 8], 3)
+        x = x1+x2+x3
+        return x
 
     def shuffle_3x_rows(self):
         # shuffle the 3x rows

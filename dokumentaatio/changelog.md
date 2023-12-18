@@ -24,3 +24,7 @@
 - Voittaminen toimii
 - lisätty kello joka ajastaa kuinka pitkään sudokun ratkaisemiseen menee
 - lisätty kirjaus virheistä
+
+## Viikko 7
+
+- uudelleen strukturoitu koodi. ui ja peli logiikka nyt erillään
