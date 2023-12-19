@@ -8,6 +8,8 @@ Pelissä pelaajat voivat ratkaista sudoku ruudukon. Sudoku ruudukko generoidaan 
 - [Tuntikirjanpito](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 - [Changelog](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
 - [Arkkitehtuuri](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+- [Käyttöohje](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
+- [Release](https://github.com/Nanotiike/ot-harjoitustyo/releases)
 
 ## Asennus
 
