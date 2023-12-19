@@ -8,5 +8,7 @@
 | 5.12  | 3h   | Peli muutettu täysin pygameen ja on toimiva. ohjeistaa kuinka pelata. testejä sudokun generointiin |
 | 5.12  | 1h   | 1 release + misc. |
 | 10.12 | 1.5h | voittaminen toimii ja peli pitää kirjaa virheistä ja alustava kello. |
+| 13.12 | 0.5h | 2 release ja suunnittelua koodin uudelleenstrukturoimiselle|
 | 18.12 | 2h   | alustus koodin uudelleen strukturoimiselle |
-| yht   | 15.5h|  |
+| 19.12 | 2h   | koodi uudelleen strukturoitu ja toimiva taas |
+| yht   | 18h|  |

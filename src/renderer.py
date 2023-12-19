@@ -22,7 +22,7 @@ class Renderer:
         pygame.draw.rect(self.screen, (255, 255, 255), (20, 574, 504, 70))
         pygame.draw.rect(self.screen, (0, 0, 0), (20, 574, 504, 70), 3)
 
-    def render_writing(self):
+    def render_writing(self, time):
         font = pygame.font.SysFont(self.font, 30)
         for i in range(9):
             for j in range(9):
@@ -31,6 +31,8 @@ class Renderer:
                     self.screen.blit(text, (20+j*56+20, 60+i*56+12))
         text = font.render("Mistakes: "+str(self.sudoku.mistakes), True, (0, 0, 0))
         self.screen.blit(text, (200, 10))
+        text = font.render("Time: "+str(time//1000)+"s", True, (0, 0, 0))
+        self.screen.blit(text, (380, 10))
         font = pygame.font.SysFont(self.font, 20)
         text = font.render("Press your mouse key on a square to select it and then", True, (0, 0, 0))
         self.screen.blit(text, (25, 579))
@@ -58,20 +60,18 @@ class Renderer:
         text = font.render("You Win!", True, (0, 0, 0))
         self.screen.blit(text, (132, 224))
         font = pygame.font.SysFont(self.font, 20)
-        text = font.render("Time: "+str(round(time, 2))+"s", True, (0, 0, 0))
+        text = font.render("Time: "+str(round(time/1000, 2))+"s", True, (0, 0, 0))
         self.screen.blit(text, (227, 324))
         text = font.render("Mistakes: "+str(self.sudoku.mistakes), True, (0, 0, 0))
         self.screen.blit(text, (227, 349))
         pygame.display.flip()
 
-    def render(self, x, y, input, time, win):  
+    def render(self, x, y, input, time):  
         self.render_backround(x, y)
-        self.render_writing()
+        self.render_writing(time)
         if input == 1:
             self.render_wrong_number()
         elif input == 2:
             self.render_already_filled()
-        if win == True:
-            self.render_win_screen(time)
         pygame.display.flip()
         
