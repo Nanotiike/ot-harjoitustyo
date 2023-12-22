@@ -10,6 +10,7 @@ class Game_loop:
         self._clock = clock
 
     def start(self):
+        # Runs the main game loop and checks if the player has won. also runs the clock and renderer
         while True:
             if self._handle_events() == False:
                 break
@@ -25,6 +26,7 @@ class Game_loop:
             self._clock.tick(60)
 
     def _handle_events(self):
+        # Handles all the events that happen in the game
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return False
@@ -45,6 +47,7 @@ class Game_loop:
                         pygame.event.wait()
 
     def win(self, endtime):
+        # Runs the win screen
         endscreen = True
         while endscreen == True:
             self._renderer.render_win_screen(endtime)

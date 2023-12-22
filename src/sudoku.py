@@ -7,6 +7,7 @@ class Sudoku:
         self.mistakes = 0
 
     def print_board(self, board):
+        # Leftover from earlier version. Prints the board to the console
         c = 0
         for i in range(len(board)):
             r = 0
@@ -41,6 +42,7 @@ class Sudoku:
         return False
 
     def create_player_board(self):
+        # Creates a player board with 17 clues
         temp_board =[[0, 0, 0, 0, 0, 0, 0, 0, 0],
                     [0, 0, 0, 0, 0, 0, 0, 0, 0],
                     [0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -62,6 +64,7 @@ class Sudoku:
         return temp_board
 
     def make_move(self, y, x, number):
+        # Checks if the move is valid and makes the move
         if self.player_board[y][x] == 0:
             if self.board[y][x] == number:
                 self.player_board[y][x] = number

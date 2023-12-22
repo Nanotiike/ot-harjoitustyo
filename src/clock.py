@@ -1,6 +1,7 @@
 import pygame
 
 class Clock:
+    # Handles the timer for the game
     def __init__(self):
         self._clock = pygame.time.Clock()
 

@@ -8,6 +8,7 @@ class Renderer:
         self.sudoku = sudoku
 
     def render_backround(self, x, y):
+        # Draws the background of the screen
         self.screen.fill((212, 235, 242))
         pygame.draw.rect(self.screen, (255, 255, 255), (20, 60, 504, 504))
         if -1<x<9 and -1<y<9:
@@ -23,6 +24,7 @@ class Renderer:
         pygame.draw.rect(self.screen, (0, 0, 0), (20, 574, 504, 70), 3)
 
     def render_writing(self, time):
+        # Draws the numbers and the text on the screen
         font = pygame.font.SysFont(self.font, 30)
         for i in range(9):
             for j in range(9):
@@ -40,6 +42,7 @@ class Renderer:
         self.screen.blit(text, (25, 604))
 
     def render_wrong_number(self):
+        # Draws the text box that informs the player that the number they entered is wrong
         font = pygame.font.SysFont(self.font, 20)
         pygame.draw.rect(self.screen, (255, 255, 255), (172, 287, 200, 50))
         pygame.draw.rect(self.screen, (0, 0, 0), (172, 287, 200, 50), 3)
@@ -47,6 +50,7 @@ class Renderer:
         self.screen.blit(text, (202, 299))
 
     def render_already_filled(self):
+        # Draws the text box that informs the player that the square they selected already has a number
         font = pygame.font.SysFont(self.font, 20)
         pygame.draw.rect(self.screen, (255, 255, 255), (97, 287, 350, 50))
         pygame.draw.rect(self.screen, (0, 0, 0), (97, 287, 350, 50), 3)
@@ -54,6 +58,7 @@ class Renderer:
         self.screen.blit(text, (117, 299))
 
     def render_win_screen(self, time):
+        # Draws the win screen
         pygame.draw.rect(self.screen, (255, 255, 255), (97, 212, 350, 200))
         pygame.draw.rect(self.screen, (0, 0, 0), (97, 212, 350, 200), 3)
         font = pygame.font.SysFont(self.font, 70)
@@ -67,6 +72,7 @@ class Renderer:
         pygame.display.flip()
 
     def render(self, x, y, input, time):  
+        # Draws the whole screen while the game is playing
         self.render_backround(x, y)
         self.render_writing(time)
         if input == 1:
