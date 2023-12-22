@@ -4,15 +4,11 @@ Ohjelmaa on testattu automatisoiduin yksikkötestein unittestilla sekä manuaali
 
 ## Yksikkö- ja integraatiotestaus
 
-### Sovelluslogiikka
-
-Sudoku ruudukosta vastaavaa `Sudoku`-luokkaa testataan [TestSudoku]()-testiluokalla. Sudoku ruudukon generoinnista vastaavaa `Generate_sudoku`-luokkaa testataan [TestSudokuGenerator]()-testiluokalla.
-
 ### Testauskattavuus
 
 Sovelluksen testauksen haarautumakattavuus on 33%
 
-![]()
+![](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/dokumentaatio/kuvat/testikattavuus.png)
 
 Testaamatta jäivät build.py, clock.py, renderer.py, ja game_loop.py. 
 
@@ -22,8 +18,8 @@ Sovelluksen järjestelmätestaus on suoritettu manuaalisesti.
 
 ### Asennus ja konfigurointi
 
-Sovellus on haettu ja sitä on testattu [käyttöohjeen]() kuvaamalla tavalla Linux-ympäristöön. 
+Sovellus on haettu ja sitä on testattu [käyttöohjeen](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md) kuvaamalla tavalla Linux-ympäristöön. 
 
 ### Toiminnallisuudet
 
-Kaikki [määrittelydokumentin]() ja käyttöohjeen listaamat toiminnallisuudet on käyty läpi. Kaikkien toiminnallisuuksien yhteydessä on yritetty myös toimia tahallaan virheellisesti.
+Kaikki [määrittelydokumentin](https://github.com/Nanotiike/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md) ja käyttöohjeen listaamat toiminnallisuudet on käyty läpi. Kaikkien toiminnallisuuksien yhteydessä on yritetty myös toimia tahallaan virheellisesti.
