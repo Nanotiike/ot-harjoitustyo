@@ -11,4 +11,5 @@
 | 13.12 | 0.5h | 2 release ja suunnittelua koodin uudelleenstrukturoimiselle|
 | 18.12 | 2h   | alustus koodin uudelleen strukturoimiselle |
 | 19.12 | 2h   | koodi uudelleen strukturoitu ja toimiva taas |
-| yht   | 18h|  |
+| 21.12 | 1h   | käyttöohje tehty |
+| yht   | 10h  |  |
