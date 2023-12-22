@@ -12,13 +12,14 @@ Numeron lisääminen:
 ```mermaid
 sequenceDiagram
   actor User
-  participant main
+  participant Game_loop
+  participant Renderer
   participant Sudoku
-  User ->> main: muose click(x,y)
-  main -> main: draw_backround()
-  User ->> main: press 1-9
-  main ->> Sudoku: make_move(x,y,number)
+  User ->> Game_loop: muose click(x,y)
+  Game_loop -> Renderer: render(x,y)
+  User ->> Game_loop: press 1-9
+  Game_loop ->> Sudoku: make_move(x,y,number)
   Sudoku --> main: 0
   Sudoku -> Sudoku: player_board.append(x,y,number)
-  main -> main: draw_backround()
+  Game_loop -> Renderer: render(x,y)
 ```
