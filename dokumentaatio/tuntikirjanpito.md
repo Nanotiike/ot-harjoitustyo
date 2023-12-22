@@ -12,4 +12,4 @@
 | 18.12 | 2h   | alustus koodin uudelleen strukturoimiselle |
 | 19.12 | 2h   | koodi uudelleen strukturoitu ja toimiva taas |
 | 21.12 | 1h   | käyttöohje tehty |
-| yht   | 10h  |  |
+| yht   | 19h  |  |
